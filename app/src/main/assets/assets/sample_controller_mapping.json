@@ -1,0 +1,15 @@
+{
+  "name": "Deck Lite Sample",
+  "vendorId": 65261,
+  "productId": 1,
+  "manufacturer": "Sample",
+  "productProduct": "Deck Lite",
+  "productName": "Deck Lite",
+  "mappings": [
+    {"type": "note", "status": 144, "data1": 0, "deck": "A", "action": "PlayPause"},
+    {"type": "note", "status": 144, "data1": 1, "deck": "A", "action": "Cue"},
+    {"type": "note", "status": 144, "data1": 2, "deck": "A", "action": "Sync"},
+    {"type": "cc", "status": 176, "data1": 0, "deck": "A", "action": "Volume"},
+    {"type": "cc", "status": 176, "data1": 1, "deck": "B", "action": "Volume"}
+  ]
+}

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dj_panel_header"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/spacing_large">
+
+    <!-- IZQUIERDA -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DJ PORTABLE PRO"
+        android:textColor="@color/dj_text_primary"
+        android:textSize="@dimen/text_caption"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:background="@color/dj_green_status" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <!-- CENTRO -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/DjText.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MASTER"
+            android:textColor="@color/dj_text_secondary"
+            android:textSize="@dimen/text_micro" />
+
+        <TextView
+            style="@style/DjText.Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_small"
+            android:text="124.00"
+            android:textColor="@color/dj_orange_master"
+            android:textSize="@dimen/text_body"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <!-- DERECHA -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/DjText.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AUDIO"
+            android:textColor="@color/dj_green_status"
+            android:textSize="@dimen/text_micro" />
+
+        <TextView
+            style="@style/DjText.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MIDI"
+            android:textColor="@color/dj_green_status"
+            android:textSize="@dimen/text_micro" />
+
+        <TextView
+            style="@style/DjText.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_medium"
+            android:text="CPU: 12%"
+            android:textColor="@color/dj_text_secondary"
+            android:textSize="@dimen/text_micro" />
+    </LinearLayout>
+
+</LinearLayout>

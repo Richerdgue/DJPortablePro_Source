@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dj_panel_header"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <Button
+        style="@style/DjButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/spacing_small"
+        android:text="LIBRARY"
+        android:textSize="@dimen/text_micro" />
+
+    <Button
+        style="@style/DjButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/spacing_small"
+        android:text="PERFORM"
+        android:textSize="@dimen/text_micro" />
+
+    <Button
+        style="@style/DjButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/spacing_small"
+        android:text="REC"
+        android:textSize="@dimen/text_micro" />
+
+    <Button
+        style="@style/DjButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/spacing_small"
+        android:text="SETTING"
+        android:textSize="@dimen/text_micro" />
+
+    <Button
+        style="@style/DjButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/spacing_small"
+        android:text="HARDWARE"
+        android:textSize="@dimen/text_micro" />
+
+</LinearLayout>

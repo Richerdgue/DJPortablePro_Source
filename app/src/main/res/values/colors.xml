@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- DEPTH LEVELS (Visual Hierarchy) -->
+    <!-- LEVEL 0: Absolute base -->
+    <color name="dj_background">#050507</color>
+    <!-- LEVEL 1: Main panels and containers -->
+    <color name="dj_panel_bg">#0D0D11</color>
+    <color name="dj_panel_header">#14141A</color>
+    <!-- LEVEL 2: Controls, knobs area, fader tracks -->
+    <color name="dj_surface_control">#1A1A22</color>
+    <!-- LEVEL 3: Active states or highlights -->
+    <color name="dj_surface_active">#25252D</color>
+    <!-- LEVEL 4: Interactive states (pressed/focused) -->
+    <color name="dj_surface_pressed">#32323D</color>
+
+    <!-- BORDERS & SEPARATORS -->
+    <color name="dj_border">#22222A</color>
+    <color name="dj_border_highlight">#3D3D4A</color>
+    <color name="dj_border_active">#555566</color>
+
+    <!-- BRAND & ACCENT COLORS (Technical Palette) -->
+    <!-- Main UI Cyan (Deck A / Info) -->
+    <color name="dj_cyan">#00E5FF</color>
+    <color name="dj_cyan_dim">#007B8A</color>
+    <color name="dj_cyan_glow">#4000E5FF</color>
+
+    <!-- Secondary Magenta (Deck B) -->
+    <color name="dj_magenta">#FF00FF</color>
+    <color name="dj_magenta_dim">#8A008A</color>
+
+    <!-- Master / Warning Orange -->
+    <color name="dj_orange_master">#FF9100</color>
+
+    <!-- Positive / Play / Status Green -->
+    <color name="dj_green_status">#00E676</color>
+
+    <!-- Alert / Red / Clip -->
+    <color name="dj_red_alert">#FF1744</color>
+    <color name="dj_clip_red">#D50000</color>
+
+    <!-- TYPOGRAPHY -->
+    <color name="dj_text_primary">#F0F0F5</color>
+    <color name="dj_text_secondary">#8E8E9A</color>
+    <color name="dj_text_tertiary">#4D4D5A</color>
+    <color name="dj_text_disabled">#2D2D38</color>
+
+    <!-- PADS & SPECIFIC CONTROLS -->
+    <color name="dj_pad_idle">#18181F</color>
+    <color name="dj_pad_active">#2A2A35</color>
+    <color name="dj_knob_indicator">#FFFFFF</color>
+</resources>

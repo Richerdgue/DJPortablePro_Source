@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Hercules Skin Host</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #07090E;
+            overflow: hidden;
+        }
+
+        /* Layout que imita la estructura de la controladora Hercules */
+        .chassis {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, #121620 0%, #07090E 100%);
+            border: 2px solid #252932;
+            box-sizing: border-box;
+        }
+
+        .deck {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .mixer {
+            flex: 1;
+            background: rgba(0,0,0,0.3);
+            border-left: 2px solid #252932;
+            border-right: 2px solid #252932;
+        }
+
+        .label {
+            color: #00E5FF;
+            font-family: monospace;
+            font-weight: 900;
+            font-size: 10px;
+            letter-spacing: 2px;
+            margin-top: 10px;
+        }
+
+        /* Marcadores visuales para saber donde poner Compose */
+        .hole {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background: rgba(0,0,0,0.5);
+            box-shadow: inset 0 0 20px #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="chassis">
+        <div class="deck">
+            <div class="hole"></div>
+            <div class="label">HERCULES DECK 1</div>
+        </div>
+        <div class="mixer">
+            <div style="height: 100%; display: flex; justify-content: center; align-items: center; color: #444; font-size: 12px; font-weight: bold;">
+                MIXER SKIN TSX
+            </div>
+        </div>
+        <div class="deck">
+            <div class="hole"></div>
+            <div class="label" style="color: #FF2D55;">HERCULES DECK 2</div>
+        </div>
+    </div>
+</body>
+</html>

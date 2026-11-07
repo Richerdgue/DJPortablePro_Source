@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Generic filter for USB MIDI/Audio devices -->
+    <!-- Class 1 = Audio (which includes MIDI Streaming subclass 3) -->
+    <usb-device class="1" />
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingVertical="2dp">
+
+    <!-- RESET Button -->
+    <Button
+        android:id="@+id/btnReset"
+        android:background="@drawable/btn_selector_main"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginBottom="2dp"
+        android:text="RES"
+        android:textColor="@color/dj_text_secondary"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:padding="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp" />
+
+    <TextView
+        style="@style/DjText.Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+50%"
+        android:textColor="@color/dj_text_secondary"
+        android:textSize="11sp" />
+
+    <!-- Fader Track Container with Fader Cap -->
+    <FrameLayout
+        android:id="@+id/faderContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginVertical="2dp">
+
+        <!-- Fader Track Line (Blanco para máxima visibilidad) -->
+        <View
+            android:id="@+id/pitchTrackLine"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#FFFFFF" />
+
+        <!-- Center Notch Line -->
+        <View
+            android:layout_width="14dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/dj_text_secondary" />
+
+        <!-- Fader Cap / Thumb Rectangle (52dp x 34dp para mayor accesibilidad táctil) -->
+        <View
+            android:id="@+id/faderCap"
+            android:layout_width="52dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:background="@drawable/fader_cap" />
+
+    </FrameLayout>
+
+    <TextView
+        style="@style/DjText.Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-50%"
+        android:textColor="@color/dj_text_secondary"
+        android:textSize="11sp" />
+
+</LinearLayout>

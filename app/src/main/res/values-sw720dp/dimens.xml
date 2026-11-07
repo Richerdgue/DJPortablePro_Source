@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_xs">8dp</dimen>
+    <dimen name="margin_sm">12dp</dimen>
+    <dimen name="margin_md">20dp</dimen>
+    <dimen name="margin_lg">28dp</dimen>
+    <dimen name="margin_xl">40dp</dimen>
+
+    <dimen name="pad_button_size">80dp</dimen>
+    <dimen name="pad_button_corner">12dp</dimen>
+    <dimen name="pad_button_text">15sp</dimen>
+    <dimen name="pad_button_subtext">12sp</dimen>
+
+    <dimen name="deck_corner">20dp</dimen>
+    <dimen name="overlay_corner">24dp</dimen>
+
+    <dimen name="waveform_height">112dp</dimen>
+    <dimen name="crossfader_height">52dp</dimen>
+    <dimen name="knob_size">84dp</dimen>
+    <dimen name="slider_width">44dp</dimen>
+
+    <dimen name="deck_label_text">18sp</dimen>
+    <dimen name="bpm_text">24sp</dimen>
+    <dimen name="time_text">16sp</dimen>
+    <dimen name="pad_section_btn_height">56dp</dimen>
+    <dimen name="pad_section_btn_text">16sp</dimen>
+
+    <dimen name="overlay_header_height">56dp</dimen>
+    <dimen name="overlay_top_offset">0dp</dimen>
+
+    <dimen name="play_button_size">64dp</dimen>
+    <dimen name="sync_button_size">52dp</dimen>
+    <dimen name="cue_button_size">52dp</dimen>
+</resources>

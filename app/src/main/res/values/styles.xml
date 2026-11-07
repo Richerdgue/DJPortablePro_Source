@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TYPOGRAPHY STYLES -->
+    <style name="DjText" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/dj_text_primary</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="DjText.Label" parent="DjText">
+        <item name="android:textSize">@dimen/text_tag</item>
+        <item name="android:textColor">@color/dj_text_secondary</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DjText.Value" parent="DjText">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+
+    <style name="DjText.Display" parent="DjText">
+        <item name="android:textSize">@dimen/text_huge</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColor">@color/dj_cyan</item>
+    </style>
+
+    <style name="DjText.TrackTitle" parent="DjText">
+        <item name="android:textSize">@dimen/text_subhead</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DjText.Artist" parent="DjText">
+        <item name="android:textSize">@dimen/text_caption</item>
+        <item name="android:textColor">@color/dj_text_secondary</item>
+    </style>
+
+    <style name="DjText.ControlLabel" parent="DjText">
+        <item name="android:textSize">@dimen/text_micro</item>
+        <item name="android:textColor">@color/dj_text_secondary</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- BUTTON STYLES -->
+    <style name="DjControlBase" parent="android:Widget.Button">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:minHeight">@dimen/btn_height_sm</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/text_micro</item>
+    </style>
+
+    <style name="DjButton" parent="DjControlBase">
+        <item name="android:backgroundTint">@color/dj_surface_control</item>
+        <item name="android:textColor">@color/dj_text_primary</item>
+    </style>
+
+    <style name="DjButton.Active" parent="DjButton">
+        <item name="android:backgroundTint">@color/dj_surface_active</item>
+        <item name="android:textColor">@color/dj_cyan</item>
+        <item name="android:state_activated">true</item>
+    </style>
+
+    <style name="DjButton.Transport" parent="DjControlBase">
+        <item name="android:textSize">@dimen/text_caption</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">@dimen/btn_transport_height</item>
+    </style>
+
+    <style name="DjButton.Play" parent="DjButton.Transport">
+        <item name="android:textColor">@color/dj_green_status</item>
+    </style>
+
+    <style name="DjButton.Cue" parent="DjButton.Transport">
+        <item name="android:textColor">@color/dj_orange_master</item>
+    </style>
+
+    <style name="DjTransportButton" parent="DjButton.Transport" />
+
+    <!-- PAD STYLE -->
+    <style name="DjPad" parent="">
+        <item name="android:layout_width">@dimen/pad_size</item>
+        <item name="android:layout_height">@dimen/pad_size</item>
+        <item name="android:background">@color/dj_pad_idle</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

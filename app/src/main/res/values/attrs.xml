@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="accentColor" format="color" />
+    <attr name="deckLabel" format="string" />
+    <attr name="isRightDeck" format="boolean" />
+
+    <declare-styleable name="JogWheelView">
+        <attr name="accentColor" />
+        <attr name="deckLabel" />
+    </declare-styleable>
+
+    <declare-styleable name="DeckPanel">
+        <attr name="accentColor" />
+        <attr name="deckLabel" />
+        <attr name="isRightDeck" />
+    </declare-styleable>
+
+    <declare-styleable name="RotaryDjKnobView">
+        <attr name="accentColor" />
+        <attr name="knobLabel" format="string" />
+        <attr name="knobValue" format="float" /> <!-- 0.0 to 1.0 -->
+        <attr name="showTickMarks" format="boolean" />
+    </declare-styleable>
+</resources>

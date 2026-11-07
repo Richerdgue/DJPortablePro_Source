@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dj_panel_bg"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <!-- CHANNEL A -->
+    <include
+        layout="@layout/view_mixer_channel"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <!-- MASTER SECTION -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_small">
+
+        <TextView
+            style="@style/DjText.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MASTER"
+            android:textColor="@color/dj_text_secondary"
+            android:textSize="@dimen/text_micro" />
+
+        <View
+            android:layout_width="@dimen/knob_md"
+            android:layout_height="@dimen/knob_md"
+            android:layout_margin="@dimen/spacing_small"
+            android:background="@color/dj_border_highlight" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.djportablepro.app.ui.mixer.VuMeterView
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="2dp" />
+
+            <com.djportablepro.app.ui.mixer.VuMeterView
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="2dp" />
+        </LinearLayout>
+
+        <!-- CROSSFADER AREA -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:background="@color/dj_border" />
+    </LinearLayout>
+
+    <!-- CHANNEL B -->
+    <include
+        layout="@layout/view_mixer_channel"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>

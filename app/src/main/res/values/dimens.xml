@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- GLOBAL LAYOUT -->
+    <dimen name="top_bar_height">36dp</dimen>
+    <dimen name="bottom_bar_height">44dp</dimen>
+    <dimen name="performance_area_height">130dp</dimen>
+    <dimen name="track_header_height">48dp</dimen>
+
+    <!-- SPACING -->
+    <dimen name="spacing_micro">2dp</dimen>
+    <dimen name="spacing_tiny">4dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">12dp</dimen>
+    <dimen name="spacing_large">16dp</dimen>
+    <dimen name="spacing_xlarge">24dp</dimen>
+
+    <!-- CONTROL DIMENSIONS -->
+    <!-- Buttons -->
+    <dimen name="btn_height_sm">24dp</dimen>
+    <dimen name="btn_height_md">32dp</dimen>
+    <dimen name="btn_height_lg">44dp</dimen>
+    <dimen name="btn_transport_height">44dp</dimen>
+
+    <!-- Knobs (Square Containers) -->
+    <dimen name="knob_sm">28dp</dimen>
+    <dimen name="knob_md">40dp</dimen>
+    <dimen name="knob_lg">56dp</dimen>
+
+    <!-- Faders -->
+    <dimen name="fader_track_width">4dp</dimen>
+    <dimen name="fader_cap_width">24dp</dimen>
+    <dimen name="fader_cap_height">12dp</dimen>
+
+    <!-- Pads -->
+    <dimen name="pad_size">64dp</dimen>
+
+    <!-- Jog Wheel Size -->
+    <dimen name="jog_wheel_size">150dp</dimen>
+
+    <!-- TEXT SIZES -->
+    <dimen name="text_micro">8sp</dimen>
+    <dimen name="text_tag">9sp</dimen>
+    <dimen name="text_caption">10sp</dimen>
+    <dimen name="text_body">12sp</dimen>
+    <dimen name="text_subhead">14sp</dimen>
+    <dimen name="text_title">16sp</dimen>
+    <dimen name="text_display">20sp</dimen>
+    <dimen name="text_huge">32sp</dimen>
+
+    <!-- CORNER RADIUS (Technical look: sharp but defined) -->
+    <dimen name="radius_none">0dp</dimen>
+    <dimen name="radius_small">2dp</dimen>
+    <dimen name="radius_medium">4dp</dimen>
+    <dimen name="radius_large">8dp</dimen>
+</resources>

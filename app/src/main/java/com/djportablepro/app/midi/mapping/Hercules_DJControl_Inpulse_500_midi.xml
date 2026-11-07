@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MixxxMIDIPreset mixxxVersion="2.2" schemaVersion="1">
+	<info>
+		<name>Hercules DJControl Inpulse 500 1c</name>
+		<author>DJ Phatso for Hercules Technical Support</author>
+		<description>MIDI Preset for Hercules DJControl Inpulse 500</description>
+		<wiki>https://www.mixxx.org/wiki/doku.php/hercules_djcontrol_inpulse_500</wiki>
+		<forums>https://mixxx.discourse.group/t/hercules-djcontrol-inpulse-500/19739</forums>
+	</info>
+	<controller id="DJControl Inpulse 500">
+		<scriptfiles>
+			<file filename="lodash.mixxx.js" />
+			<file filename="midi-components-0.0.js" />
+			<file functionprefix="DJCi500" filename="DJControl_Inpulse_500_script.js" />
+		</scriptfiles>
+		<controls>
+			<!-- Note Number (NN) - Buttons/switches/Encoders -->
+			<!-- NN's MIDI Channel 1 (0x90) -->
+
+			<!-- Browser section (Encoder button) -->
+			<control>
+				<group>[Library]</group>
+				<key>MoveFocus</key>
+				<description>Browser button</description>
+				<status>0x90</status>
+				<midino>0x00</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Library]</group>
+				<key>MoveVertical</key>
+				<description>Move Vertical (Browser Knob)</description>
+				<status>0xB0</status>
+				<midino>0x01</midino>
+				<options><selectknob /></options>
+			</control>
+			<control>
+				<group>[Library]</group>
+				<key>MoveHorizontal</key>
+				<description>Move Horizontal (Browser Knob)</description>
+				<status>0xB3</status>
+				<midino>0x01</midino>
+				<options><selectknob /></options>
+			</control>
+
+			<!-- Assistant -->
+			<control>
+				<group>[AutoDJ]</group>
+				<key>enabled</key>
+				<description>AutoDJ On/Off</description>
+				<status>0x90</status>
+				<midino>0x03</midino>
+				<normal/>
+			</control>
+
+			<!-- Deck A Standard (0x91) -->
+			<control>
+				<group>[Channel1]</group>
+				<key>DJCi500.play</key>
+				<description>Play button</description>
+				<status>0x91</status>
+				<midino>0x07</midino>
+				<options><script-binding /></options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>cue_default</key>
+				<description>Cue button</description>
+				<status>0x91</status>
+				<midino>0x06</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>sync_enabled</key>
+				<description>Sync button</description>
+				<status>0x91</status>
+				<midino>0x05</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>pfl</key>
+				<description>PFL button</description>
+				<status>0x91</status>
+				<midino>0x0C</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>LoadSelectedTrack</key>
+				<description>LOAD A button</description>
+				<status>0x91</status>
+				<midino>0x0D</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>slip_enabled</key>
+				<description>SLIP button</description>
+				<status>0x91</status>
+				<midino>0x01</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>quantize</key>
+				<description>Quantize button - Deck 1</description>
+				<status>0x91</status>
+				<midino>0x02</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>keylock</key>
+				<description>Keylock button (shift+quant) - Deck 1</description>
+				<status>0x94</status>
+				<midino>0x02</midino>
+				<options><normal /></options>
+			</control>
+
+			<!-- Vinyl button -->
+			<control>
+				<group>[Master]</group>
+				<key>DJCi500.vinylButton</key>
+				<description>Vinyl Deck A</description>
+				<status>0x91</status>
+				<midino>0x03</midino>
+				<options><script-binding /></options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>DJCi500.slowPauseSet</key>
+				<description>Shift + Vinyl Deck A</description>
+				<status>0x94</status>
+				<midino>0x03</midino>
+				<options><script-binding /></options>
+			</control>
+
+			<!-- Jog Touch A -->
+			<control>
+				<group>[Channel1]</group>
+				<key>DJCi500.wheelTouch</key>
+				<description>Jog Wheel Touch Deck A</description>
+				<status>0x91</status>
+				<midino>0x08</midino>
+				<options><script-binding /></options>
+			</control>
+
+			<!-- Loop In/Out -->
+			<control>
+				<group>[Channel1]</group>
+				<key>loop_in</key>
+				<description>Loop In button</description>
+				<status>0x91</status>
+				<midino>0x09</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>loop_out</key>
+				<description>Loop Out button</description>
+				<status>0x91</status>
+				<midino>0x0A</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>loop_in_goto</key>
+				<description>S+Loop In button</description>
+				<status>0x94</status>
+				<midino>0x09</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>loop_out_goto</key>
+				<description>S+Loop Out button</description>
+				<status>0x94</status>
+				<midino>0x0A</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>reloop_toggle</key>
+				<description>Loop Encoder Push button Deck A</description>
+				<status>0x91</status>
+				<midino>0x2C</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>beatloop_4_activate</key>
+				<description>Loop Encoder Push button Deck A</description>
+				<status>0x94</status>
+				<midino>0x2C</midino>
+				<options><normal /></options>
+			</control>
+
+			<!-- Deck B Standard (0x92) -->
+			<control>
+				<group>[Channel2]</group>
+				<key>DJCi500.play</key>
+				<description>Play button</description>
+				<status>0x92</status>
+				<midino>0x07</midino>
+				<options><script-binding /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>cue_default</key>
+				<description>Cue button</description>
+				<status>0x92</status>
+				<midino>0x06</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>sync_enabled</key>
+				<description>Sync button</description>
+				<status>0x92</status>
+				<midino>0x05</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>pfl</key>
+				<description>PFL button</description>
+				<status>0x92</status>
+				<midino>0x0C</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>LoadSelectedTrack</key>
+				<description>LOAD B button</description>
+				<status>0x92</status>
+				<midino>0x0D</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>slip_enabled</key>
+				<description>SLIP button</description>
+				<status>0x92</status>
+				<midino>0x01</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>quantize</key>
+				<description>Quantize button - Deck 2</description>
+				<status>0x92</status>
+				<midino>0x02</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>keylock</key>
+				<description>Keylock button (shift+quant) - Deck 2</description>
+				<status>0x95</status>
+				<midino>0x02</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Master]</group>
+				<key>DJCi500.vinylButton</key>
+				<description>Vinyl Deck B</description>
+				<status>0x92</status>
+				<midino>0x03</midino>
+				<options><script-binding /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>DJCi500.slowPauseSet</key>
+				<description>Shift + Vinyl Deck B</description>
+				<status>0x95</status>
+				<midino>0x03</midino>
+				<options><script-binding /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>DJCi500.wheelTouch</key>
+				<description>Jog Wheel Touch Deck B</description>
+				<status>0x92</status>
+				<midino>0x08</midino>
+				<options><script-binding /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>loop_in</key>
+				<description>Loop In button</description>
+				<status>0x92</status>
+				<midino>0x09</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>loop_out</key>
+				<description>Loop Out button</description>
+				<status>0x92</status>
+				<midino>0x0A</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>loop_in_goto</key>
+				<description>Loop In button</description>
+				<status>0x95</status>
+				<midino>0x09</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>loop_out_goto</key>
+				<description>Loop Out button</description>
+				<status>0x95</status>
+				<midino>0x0A</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>reloop_toggle</key>
+				<description>Loop Encoder Push button Deck B</description>
+				<status>0x92</status>
+				<midino>0x2C</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>beatloop_4_activate</key>
+				<description>Loop Encoder Push button Deck B</description>
+				<status>0x95</status>
+				<midino>0x2C</midino>
+				<options><normal /></options>
+			</control>
+
+			<!-- Shift Modes (0x94 & 0x95) -->
+			<control>
+				<group>[Channel1]</group>
+				<key>DJCi500.wheelTouchShift</key>
+				<description>Jog Wheel Shift Touch Deck A</description>
+				<status>0x94</status>
+				<midino>0x08</midino>
+				<options><script-binding /></options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>play_stutter</key>
+				<description>SHIFT + Play: Play Stutter</description>
+				<status>0x94</status>
+				<midino>0x07</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>start_play</key>
+				<description>SHIFT + Cue: REWIND to beginning</description>
+				<status>0x94</status>
+				<midino>0x06</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>sync_key</key>
+				<description>SHIFT + Sync: Match key</description>
+				<status>0x94</status>
+				<midino>0x05</midino>
+				<options><normal /></options>
+			</control>
+
+			<control>
+				<group>[Channel2]</group>
+				<key>DJCi500.wheelTouchShift</key>
+				<description>Jog Wheel Shift Touch Deck B</description>
+				<status>0x95</status>
+				<midino>0x08</midino>
+				<options><script-binding /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>play_stutter</key>
+				<description>SHIFT + Play: Play Stutter</description>
+				<status>0x95</status>
+				<midino>0x07</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>start_play</key>
+				<description>SHIFT + Cue: REWIND to beginning</description>
+				<status>0x95</status>
+				<midino>0x06</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>sync_key</key>
+				<description>SHIFT + Sync: Sync key</description>
+				<status>0x95</status>
+				<midino>0x05</midino>
+				<options><normal /></options>
+			</control>
+
+			<!-- CCs (0xB0, 0xB1, 0xB2, 0xB4, 0xB5) -->
+			<control>
+				<group>[Master]</group>
+				<key>DJCi500.crossfader</key>
+				<description>Crossfader analog</description>
+				<status>0xB0</status>
+				<midino>0x00</midino>
+				<options><script-binding /></options>
+			</control>
+
+			<control>
+				<group>[Channel1]</group>
+				<key>volume</key>
+				<description>Volume Deck A</description>
+				<status>0xB1</status>
+				<midino>0x00</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[EqualizerRack1_[Channel1]_Effect1]</group>
+				<key>parameter1</key>
+				<description>EQ LOW Deck A</description>
+				<status>0xB1</status>
+				<midino>0x02</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[EqualizerRack1_[Channel1]_Effect1]</group>
+				<key>parameter2</key>
+				<description>EQ MID Deck A</description>
+				<status>0xB1</status>
+				<midino>0x03</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[EqualizerRack1_[Channel1]_Effect1]</group>
+				<key>parameter3</key>
+				<description>EQ HIGH Deck A</description>
+				<status>0xB1</status>
+				<midino>0x04</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>pregain</key>
+				<description>Gain Deck A</description>
+				<status>0xB1</status>
+				<midino>0x05</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>DJCi500.filterKnob1</key>
+				<description>Filter Deck A</description>
+				<status>0xB1</status>
+				<midino>0x01</midino>
+				<options><script-binding/></options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>rate</key>
+				<status>0xB1</status>
+				<midino>0x08</midino>
+				<options><fourteen-bit-msb /><soft-takeover /></options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>rate</key>
+				<status>0xB1</status>
+				<midino>0x28</midino>
+				<options><fourteen-bit-lsb /><soft-takeover /></options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>DJCi500.scratchWheel</key>
+				<description>Scratch Deck A (Jog-Wheel)</description>
+				<status>0xB1</status>
+				<midino>0x0A</midino>
+				<options><script-binding /></options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>DJCi500.bendWheel</key>
+				<description>Pitch Bend Deck A (Jog-Wheel)</description>
+				<status>0xB1</status>
+				<midino>0x09</midino>
+				<options><script-binding /></options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>DJCi500.loopHalveDouble</key>
+				<description>Loop Halve/Double (Loop Knob Deck A)</description>
+				<status>0xB1</status>
+				<midino>0x0E</midino>
+				<options><script-binding /></options>
+			</control>
+
+			<control>
+				<group>[Channel2]</group>
+				<key>volume</key>
+				<description>Volume Deck B</description>
+				<status>0xB2</status>
+				<midino>0x00</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[EqualizerRack1_[Channel2]_Effect1]</group>
+				<key>parameter1</key>
+				<description>EQ LOW Deck B</description>
+				<status>0xB2</status>
+				<midino>0x02</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[EqualizerRack1_[Channel2]_Effect1]</group>
+				<key>parameter2</key>
+				<description>EQ MID Deck B</description>
+				<status>0xB2</status>
+				<midino>0x03</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[EqualizerRack1_[Channel2]_Effect1]</group>
+				<key>parameter3</key>
+				<description>EQ HIGH Deck B</description>
+				<status>0xB2</status>
+				<midino>0x04</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>pregain</key>
+				<description>Gain Deck B</description>
+				<status>0xB2</status>
+				<midino>0x05</midino>
+				<options><normal /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>DJCi500.filterKnob2</key>
+				<description>Filter Deck B</description>
+				<status>0xB2</status>
+				<midino>0x01</midino>
+				<options><script-binding/></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>rate</key>
+				<status>0xB2</status>
+				<midino>0x08</midino>
+				<options><fourteen-bit-msb /><soft-takeover /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>rate</key>
+				<status>0xB2</status>
+				<midino>0x28</midino>
+				<options><fourteen-bit-lsb /><soft-takeover /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>DJCi500.scratchWheel</key>
+				<description>Pitch Bend Deck B (Jog-Wheel)</description>
+				<status>0xB2</status>
+				<midino>0x0A</midino>
+				<options><script-binding /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>DJCi500.bendWheel</key>
+				<description>Pitch Bend Deck B (Jog-Wheel)</description>
+				<status>0xB2</status>
+				<midino>0x09</midino>
+				<options><script-binding /></options>
+			</control>
+			<control>
+				<group>[Channel2]</group>
+				<key>DJCi500.loopHalveDouble</key>
+				<description>Loop Halve/Double (Loop Knob Deck B)</description>
+				<status>0xB2</status>
+				<midino>0x0E</midino>
+				<options><script-binding /></options>
+			</control>
+
+			<!-- FX Keys -->
+			<control>
+				<group>[Channel]</group>
+				<key>DJCi500.Fx1Key</key>
+				<description>FX1-Deck1</description>
+				<status>0x90</status>
+				<midino>0x14</midino>
+				<options><script-binding /></options>
+			</control>
+			<control>
+				<group>[Channel]</group>
+				<key>DJCi500.Fx2Key</key>
+				<description>FX2-Deck1</description>
+				<status>0x90</status>
+				<midino>0x15</midino>
+				<options><script-binding /></options>
+			</control>
+			<control>
+				<group>[Channel]</group>
+				<key>DJCi500.Fx3Key</key>
+				<description>FX3-Deck1</description>
+				<status>0x90</status>
+				<midino>0x16</midino>
+				<options><script-binding /></options>
+			</control>
+			<control>
+				<group>[Channel]</group>
+				<key>DJCi500.Fx4Key</key>
+				<description>FX active/disable-Deck 1</description>
+				<status>0x90</status>
+				<midino>0x17</midino>
+				<options><script-binding /></options>
+			</control>
+		</controls>
+
+		<!-- LED Outputs -->
+		<outputs>
+			<output>
+				<group>[Channel1]</group>
+				<key>play_indicator</key>
+				<description>PLAY LED Deck A</description>
+				<minimum>0.5</minimum>
+				<maximum>1</maximum>
+				<status>0x91</status>
+				<midino>0x07</midino>
+				<on>0x7f</on>
+				<off>0x0</off>
+			</output>
+			<output>
+				<group>[Channel1]</group>
+				<key>play_indicator</key>
+				<description>Deck A - Number LED</description>
+				<minimum>0.5</minimum>
+				<maximum>1</maximum>
+				<status>0x91</status>
+				<midino>0x30</midino>
+				<on>0x7f</on>
+				<off>0x0</off>
+			</output>
+			<output>
+				<group>[Channel1]</group>
+				<key>cue_indicator</key>
+				<description>CUE LED Deck A</description>
+				<minimum>0.5</minimum>
+				<maximum>1</maximum>
+				<status>0x91</status>
+				<midino>0x06</midino>
+				<on>0x7f</on>
+				<off>0x0</off>
+			</output>
+			<output>
+				<group>[Channel1]</group>
+				<key>sync_enabled</key>
+				<description>SYNC LED Deck A</description>
+				<minimum>0.5</minimum>
+				<maximum>1</maximum>
+				<status>0x91</status>
+				<midino>0x05</midino>
+				<on>0x7f</on>
+				<off>0x0</off>
+			</output>
+			<output>
+				<group>[Channel1]</group>
+				<key>slip_enabled</key>
+				<description>Slip button Deck A</description>
+				<minimum>0.5</minimum>
+				<maximum>1</maximum>
+				<status>0x91</status>
+				<midino>0x01</midino>
+				<on>0x7f</on>
+				<off>0x0</off>
+			</output>
+			<output>
+				<group>[Channel1]</group>
+				<key>quantize</key>
+				<description>Quantize LED - Deck 1</description>
+				<minimum>0.5</minimum>
+				<maximum>1</maximum>
+				<status>0x91</status>
+				<midino>0x02</midino>
+				<on>0x7f</on>
+				<off>0x0</off>
+			</output>
+
+			<output>
+				<group>[Channel2]</group>
+				<key>play_indicator</key>
+				<description>PLAY LED Deck B</description>
+				<minimum>0.5</minimum>
+				<maximum>1</maximum>
+				<status>0x92</status>
+				<midino>0x07</midino>
+				<on>0x7f</on>
+				<off>0x0</off>
+			</output>
+			<output>
+				<group>[Channel2]</group>
+				<key>play_indicator</key>
+				<description>Deck B - Number LED</description>
+				<minimum>0.5</minimum>
+				<maximum>1</maximum>
+				<status>0x92</status>
+				<midino>0x30</midino>
+				<on>0x7f</on>
+				<off>0x0</off>
+			</output>
+			<output>
+				<group>[Channel2]</group>
+				<key>cue_indicator</key>
+				<description>CUE LED Deck B</description>
+				<minimum>0.5</minimum>
+				<maximum>1</maximum>
+				<status>0x92</status>
+				<midino>0x06</midino>
+				<on>0x7f</on>
+				<off>0x0</off>
+			</output>
+			<output>
+				<group>[Channel2]</group>
+				<key>sync_enabled</key>
+				<description>SYNC LED Deck B</description>
+				<minimum>0.5</minimum>
+				<maximum>1</maximum>
+				<status>0x92</status>
+				<midino>0x05</midino>
+				<on>0x7f</on>
+				<off>0x0</off>
+			</output>
+			<output>
+				<group>[Channel2]</group>
+				<key>slip_enabled</key>
+				<description>Slip button Deck B</description>
+				<minimum>0.5</minimum>
+				<maximum>1</maximum>
+				<status>0x92</status>
+				<midino>0x01</midino>
+				<on>0x7f</on>
+				<off>0x0</off>
+			</output>
+			<output>
+				<group>[Channel2]</group>
+				<key>quantize</key>
+				<description>Quantize LED - Deck 2</description>
+				<minimum>0.5</minimum>
+				<maximum>1</maximum>
+				<status>0x92</status>
+				<midino>0x02</midino>
+				<on>0x7f</on>
+				<off>0x0</off>
+			</output>
+
+			<output>
+				<group>[Channel1]</group>
+				<key>loop_enabled</key>
+				<description>Loop In LED DA</description>
+				<minimum>0.5</minimum>
+				<maximum>1</maximum>
+				<status>0x91</status>
+				<midino>0x09</midino>
+				<on>0x7f</on>
+				<off>0x00</off>
+			</output>
+			<output>
+				<group>[Channel2]</group>
+				<key>loop_enabled</key>
+				<description>Loop In LED DB</description>
+				<minimum>0.5</minimum>
+				<maximum>1</maximum>
+				<status>0x92</status>
+				<midino>0x09</midino>
+				<on>0x7f</on>
+				<off>0x00</off>
+			</output>
+			<output>
+				<group>[Channel1]</group>
+				<key>loop_enabled</key>
+				<description>Loop out LED DA</description>
+				<minimum>0.5</minimum>
+				<maximum>1</maximum>
+				<status>0x91</status>
+				<midino>0x0A</midino>
+				<on>0x7f</on>
+				<off>0x00</off>
+			</output>
+			<output>
+				<group>[Channel2]</group>
+				<key>loop_enabled</key>
+				<description>Loop out LED DB</description>
+				<minimum>0.5</minimum>
+				<maximum>1</maximum>
+				<status>0x92</status>
+				<midino>0x0A</midino>
+				<on>0x7f</on>
+				<off>0x00</off>
+			</output>
+
+			<output>
+				<group>[Channel1]</group>
+				<key>pfl</key>
+				<description>PFL LED DECK A</description>
+				<minimum>0.5</minimum>
+				<maximum>1</maximum>
+				<status>0x91</status>
+				<midino>0x0C</midino>
+				<on>0x7f</on>
+				<off>0x0</off>
+			</output>
+			<output>
+				<group>[Channel2]</group>
+				<key>pfl</key>
+				<description>PFL LED DECK B</description>
+				<minimum>0.5</minimum>
+				<maximum>1</maximum>
+				<status>0x92</status>
+				<midino>0x0C</midino>
+				<on>0x7f</on>
+				<off>0x0</off>
+			</output>
+			<output>
+				<group>[Library]</group>
+				<key>MoveFocus</key>
+				<description>Browser LED (Green)</description>
+				<minimum>0.5</minimum>
+				<maximum>1</maximum>
+				<status>0x90</status>
+				<midino>0x05</midino>
+				<on>0x10</on>
+				<off>0x05</off>
+			</output>
+			<output>
+				<group>[Master]</group>
+				<key>maximize_library</key>
+				<description>Browser LED (BLUE)</description>
+				<minimum>0.5</minimum>
+				<maximum>1</maximum>
+				<status>0x90</status>
+				<midino>0x05</midino>
+				<on>0x05</on>
+				<off>0x10</off>
+			</output>
+			<output>
+				<group>[AutoDJ]</group>
+				<key>enabled</key>
+				<description>Auto DJ On</description>
+				<minimum>0.5</minimum>
+				<maximum>1</maximum>
+				<status>0x90</status>
+				<midino>0x03</midino>
+				<on>0x7f</on>
+				<off>0x0</off>
+			</output>
+		</outputs>
+	</controller>
+</MixxxMIDIPreset>
